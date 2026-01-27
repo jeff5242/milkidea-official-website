@@ -47,13 +47,13 @@ export function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <Button asChild variant="outline" size="sm">
-              <a href="tel:+886912345678" className="flex items-center gap-2">
+              <a href="tel:+886936923912" className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 撥打電話
               </a>
             </Button>
             <Button asChild className="bg-[#06C755] hover:bg-[#05b34c] text-white" size="sm">
-              <a href="https://line.me/ti/p/your_line_id" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href="https://lin.ee/sERO3sK" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 {/* LINE Icon SVG */}
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.3 10.5c0-4.6-4.5-8.3-10-8.3-5.5 0-10 3.8-10 8.3 0 2.4 1 4.6 2.6 6.1-.3 1.9-1 3.5-1.1 3.6-.1.3.2.6.5.4 0 0 2.1-1.3 4.2-2.5 1.1.3 2.4.5 3.7.5 5.5 0 10-3.7 10-8.1zm-13.6 2.9h-1.3v-3.7h1.3v3.7zm2.4 0h-1.3v-3.7h1.3v3.7zm2.5 0h-1.3v-2.1h-.9v-1.6h3v1.6h-.9v2.1zm2.4 0h-1.1l2.4-3.7h-2.1v-1.1h3.6l-2.4 3.7h2.1v1.1z" />
@@ -103,7 +103,7 @@ export function Header() {
                   </a>
                 </Button>
                 <Button asChild className="w-full justify-start bg-[#06C755] hover:bg-[#05b34c] text-white">
-                  <a href="https://line.me/ti/p/your_line_id" target="_blank" rel="noopener noreferrer">
+                  <a href="https://lin.ee/sERO3sK" target="_blank" rel="noopener noreferrer">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="mr-2">
                       <path d="M20.3 10.5c0-4.6-4.5-8.3-10-8.3-5.5 0-10 3.8-10 8.3 0 2.4 1 4.6 2.6 6.1-.3 1.9-1 3.5-1.1 3.6-.1.3.2.6.5.4 0 0 2.1-1.3 4.2-2.5 1.1.3 2.4.5 3.7.5 5.5 0 10-3.7 10-8.1zm-13.6 2.9h-1.3v-3.7h1.3v3.7zm2.4 0h-1.3v-3.7h1.3v3.7zm2.5 0h-1.3v-2.1h-.9v-1.6h3v1.6h-.9v2.1zm2.4 0h-1.1l2.4-3.7h-2.1v-1.1h3.6l-2.4 3.7h2.1v1.1z" />
                     </svg>
