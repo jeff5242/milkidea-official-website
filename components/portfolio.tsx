@@ -33,6 +33,7 @@ export function Portfolio() {
       category: "ecommerce",
       description: "Buy Now Pay Later 先買後付商城系統，完整的後台管理功能",
       tags: ["BNPL", "電商平台", "後台管理"],
+      image: "/images/portfolio/urich-app.png",
     },
     {
       title: "米屋 ERP/B2B/B2C 系統",
@@ -81,6 +82,7 @@ export function Portfolio() {
       category: "finance",
       description: "數位開戶服務，安全便捷的身份驗證流程",
       tags: ["金融科技", "線上開戶", "證券"],
+      image: "/images/portfolio/esun-securities.png",
     },
     {
       title: "AI 機櫃 CDU 散熱監管系統",
@@ -115,6 +117,7 @@ export function Portfolio() {
       category: "health",
       description: "電商平台、Line 通知、運動監測，服務超過 5 萬名使用者",
       tags: ["長照", "醫療", "5萬用戶"],
+      image: "/images/portfolio/cloudberry-app.png",
     },
     {
       title: "明明英文學習 APP",
