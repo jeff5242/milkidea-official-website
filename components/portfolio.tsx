@@ -87,12 +87,14 @@ export function Portfolio() {
       category: "ai",
       description: "感測器監控、異常通知、自動控制設定、網路設定",
       tags: ["AI", "IoT", "散熱監控"],
+      image: "/images/portfolio/ai-rack-cdu.png",
     },
     {
       title: "傳統產線 AI 數位轉型",
       category: "ai",
       description: "碳排追蹤、稼動管理、良率管理、模具壽命管理、設備保養管理",
       tags: ["AI", "ESG", "智慧製造"],
+      image: "/images/portfolio/factory-ai.png",
     },
     {
       title: "北宸導航合作",
@@ -106,6 +108,7 @@ export function Portfolio() {
       category: "transport",
       description: "電動車充電樁服務系統，支援定位與預約功能",
       tags: ["充電樁", "電動車", "導航"],
+      image: "/images/portfolio/ev-charging.png",
     },
     {
       title: "雲果長照服務 APP",
