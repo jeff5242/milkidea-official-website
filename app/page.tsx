@@ -7,6 +7,8 @@ import { Portfolio } from "@/components/portfolio"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
+import { GolfriendFeature } from "@/components/golfriend-feature"
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -16,6 +18,7 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
+      <GolfriendFeature />
       <Contact />
       <Footer />
     </main>

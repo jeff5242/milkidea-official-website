@@ -64,13 +64,6 @@ export function Portfolio() {
       image: "/images/portfolio/stone-hotpot-line.png",
     },
     {
-      title: "高朋卡系統",
-      category: "crm",
-      description: "高爾夫球練習場會員 APP，手機就是練習球卡錢包，可查詢附近球場、產生出球號領球、查詢使用記錄",
-      tags: ["會員卡", "高爾夫", "iOS/Android"],
-      image: "/images/portfolio/gaopeng-card.png",
-    },
-    {
       title: "第一銀行福利網",
       category: "finance",
       description: "福利社商品線上訂購系統，支援團購商品、一般商品分類，整合 Taiwan Pay、信用卡、eATM 多元支付",
