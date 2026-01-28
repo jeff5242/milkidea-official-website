@@ -9,7 +9,7 @@ export async function POST(request: Request) {
 
     // 寄信給管理員 (jeff@milkidea.com)
     const { data, error } = await resend.emails.send({
-      from: 'Milkidea Contact <onboarding@resend.dev>', // 驗證網域後可更換
+      from: '牛奶創意 Milkidea <noreply@milkidea.com>',
       to: ['jeff@milkidea.com'],
       subject: `[網站諮詢] 來自 ${name} 的新郵件`,
       html: `
