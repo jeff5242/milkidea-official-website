@@ -37,7 +37,11 @@ export function Contact() {
         setFormData({ name: "", email: "", company: "", message: "" })
         setTimeout(() => setIsSuccess(false), 5000)
       } else {
-        alert("發送失敗，請稍後再試或直接透過 Email 聯繫我們。")
+        // 顯示詳細錯誤訊息以便 debug
+        const errorData = await response.json().catch(() => ({}))
+        const errorMsg = errorData.error || `HTTP ${response.status}`
+        console.error("API Error:", errorMsg)
+        alert(`發送失敗: ${errorMsg}`)
       }
     } catch (error) {
       console.error("Submission error:", error)
