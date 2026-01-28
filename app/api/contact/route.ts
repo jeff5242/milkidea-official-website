@@ -1,10 +1,21 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// 確保 API Key 存在
+const apiKey = process.env.RESEND_API_KEY;
 
 export async function POST(request: Request) {
   try {
+    // 檢查 API Key 是否設定
+    if (!apiKey) {
+      console.error('RESEND_API_KEY is not configured');
+      return NextResponse.json(
+        { error: 'Email service is not configured' },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(apiKey);
     const { name, email, company, message } = await request.json();
 
     // 寄信給管理員 (jeff@milkidea.com)
@@ -24,12 +35,19 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error('Resend error:', error);
-      return NextResponse.json({ error }, { status: 500 });
+      return NextResponse.json(
+        { error: error.message || 'Failed to send email' },
+        { status: 500 }
+      );
     }
 
     return NextResponse.json({ success: true, data });
-  } catch (error) {
-    console.error('API error:', error);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  } catch (err) {
+    const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+    console.error('API error:', errorMessage);
+    return NextResponse.json(
+      { error: errorMessage },
+      { status: 500 }
+    );
   }
 }
