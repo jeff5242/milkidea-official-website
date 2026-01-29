@@ -40,8 +40,9 @@ export function Contact() {
         // 顯示詳細錯誤訊息以便 debug
         const errorData = await response.json().catch(() => ({}))
         const errorMsg = errorData.error || `HTTP ${response.status}`
-        console.error("API Error:", errorMsg)
-        alert(`發送失敗: ${errorMsg}`)
+        const errorDetails = errorData.details ? `\n\n細節: ${errorData.details}` : ""
+        console.error("API Error:", errorMsg, errorDetails)
+        alert(`發送失敗: ${errorMsg}${errorDetails}`)
       }
     } catch (error) {
       console.error("Submission error:", error)
