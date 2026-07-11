@@ -62,14 +62,15 @@ export function Contact() {
     {
       icon: Phone,
       label: "聯絡電話",
-      value: "聯繫我們取得電話",
-      href: "#",
+      value: "02-2371-1050",
+      href: "tel:+886223711050",
     },
     {
       icon: MapPin,
       label: "公司地址",
-      value: "台灣",
-      href: "#",
+      value: "台北市中正區忠孝西路一段45號9樓之5",
+      href: "https://maps.google.com/?q=台北市中正區忠孝西路一段45號9樓之5",
+      external: true,
     },
   ]
 
@@ -94,6 +95,8 @@ export function Contact() {
                 <a
                   key={info.label}
                   href={info.href}
+                  target={info.external ? "_blank" : undefined}
+                  rel={info.external ? "noopener noreferrer" : undefined}
                   className="flex items-center gap-4 group"
                 >
                   <div className="w-12 h-12 bg-primary-foreground/10 rounded-lg flex items-center justify-center group-hover:bg-primary-foreground/20 transition-colors">

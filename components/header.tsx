@@ -131,7 +131,7 @@ export function Header() {
                 ))}
                 <div className="flex flex-col gap-3 mt-2">
                   <Button asChild variant="outline" className="w-full justify-start">
-                    <a href="tel:+886912345678">
+                    <a href="tel:+886936923912">
                       <Phone className="w-4 h-4 mr-2" />
                       撥打電話
                     </a>
