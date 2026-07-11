@@ -8,10 +8,13 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
 import { GolfriendFeature } from "@/components/golfriend-feature"
+import { JsonLd } from "@/components/json-ld"
+import { organizationJsonLd } from "@/lib/organization-schema"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <JsonLd data={organizationJsonLd} />
       <Header />
       <Hero />
       <Clients />

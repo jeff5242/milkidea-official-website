@@ -7,10 +7,69 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const notoSansTC = Noto_Sans_TC({ subsets: ["latin"], weight: ['400', '500', '600', '700'], variable: '--font-noto' });
 
+const SITE_URL = 'https://www.milkidea.com'
+const SITE_NAME = '牛奶創意 Milkidea'
+const DEFAULT_TITLE = '牛奶創意 Milkidea｜客製化軟體開發．工廠 AIoT．AI 數位轉型顧問'
+const DEFAULT_DESCRIPTION =
+  '牛奶創意成立於 2011 年，專精客製化軟體開發、工廠 AIoT 設備故障預知（IFDCS）、電商 ERP／CRM 整合與 AI 數位轉型顧問，已交付 60+ 應用服務，歡迎企業與政府單位洽詢。'
+
 export const metadata: Metadata = {
-  title: '牛奶公司 Milkidea | 數位解決方案專家',
-  description: '專注於行動應用開發的數位解決方案公司，成立於2011年，已協助客戶發表超過60款應用服務。',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: DEFAULT_TITLE,
+    template: '%s｜牛奶創意 Milkidea',
+  },
+  description: DEFAULT_DESCRIPTION,
+  keywords: [
+    '軟體開發公司',
+    '客製化系統開發',
+    '工廠 AIoT',
+    'IFDCS 設備故障預知',
+    'AI 數位轉型',
+    '都更 AI 協審',
+    'LINE Bot 開發',
+    '電商 ERP 系統',
+    '台北軟體外包',
+  ],
   generator: 'v0.app',
+  applicationName: SITE_NAME,
+  authors: [{ name: '牛奶股份有限公司', url: SITE_URL }],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'zh_TW',
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [
+      {
+        url: '/images/logo-milkidea.png',
+        width: 1007,
+        height: 393,
+        alt: SITE_NAME,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: ['/images/logo-milkidea.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   icons: {
     icon: [
       {
@@ -36,7 +95,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-TW">
       <body className={`${inter.variable} ${notoSansTC.variable} font-sans antialiased`}>
         {children}
         <Analytics />
