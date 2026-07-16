@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
-type Category = "all" | "ecommerce" | "crm" | "finance" | "ai" | "transport" | "health"
+type Category = "all" | "ecommerce" | "crm" | "finance" | "ai" | "field" | "transport" | "health"
 
 interface Project {
   title: string
@@ -23,6 +23,7 @@ export function Portfolio() {
     { value: "crm", label: "CRM 系統" },
     { value: "finance", label: "金融科技" },
     { value: "ai", label: "AI 數位轉型" },
+    { value: "field", label: "場域整合" },
     { value: "transport", label: "交通導航" },
     { value: "health", label: "醫療教育" },
   ]
@@ -38,9 +39,15 @@ export function Portfolio() {
     {
       title: "米屋 ERP/B2B/B2C 系統",
       category: "ecommerce",
-      description: "完整稻米加工管理系統，涵蓋派工、過磅、烘乾監控、精米、品檢、包裝、出貨退貨、田間管理等 12 大模組",
-      tags: ["ERP", "農業科技", "智耕雲"],
+      description: "完整稻米加工管理系統，涵蓋派工、過磅、烘乾監控、精米、品檢、包裝、出貨退貨、田間管理等 12 大模組，並串接物流貨到付款自動對帳銷帳",
+      tags: ["ERP", "農業科技", "物流對帳自動化"],
       image: "/images/portfolio/ricehouse-erp.png",
+    },
+    {
+      title: "百貨櫃位 Shopline × Ecount ERP 整合",
+      category: "ecommerce",
+      description: "六家百貨櫃位 POS 訂單每日自動轉入 Ecount ERP 銷貨單，整合庫存同步、每週補貨建議與 LINE 店長日報/週報推播",
+      tags: ["ERP 整合", "RPA 自動化", "零售連鎖"],
     },
     {
       title: "永豐券村 Cardo",
@@ -92,6 +99,30 @@ export function Portfolio() {
       image: "/images/portfolio/factory-ai.png",
     },
     {
+      title: "IFDCS 工廠設備智慧監控（宏固電子宜蘭廠）",
+      category: "ai",
+      description: "電流、電壓、溫度、功率即時監控與電費預估，三層級告警即時推播，雲端＋地端雙軌架構，已於宜蘭廠區上線運行",
+      tags: ["IoT 監控", "智慧工廠", "已上線"],
+    },
+    {
+      title: "雙鴻食堂 員工訂餐系統",
+      category: "field",
+      description: "雙鴻科技五廠區 LINE 訂餐服務：整週便當預訂、每日自動結單、各廠區訂單彙整叫貨、QR 領餐報到與未領取追蹤，取代人工統計",
+      tags: ["LINE LIFF", "企業員工服務", "雙鴻科技"],
+    },
+    {
+      title: "石頭燒肉 QR 掃碼點餐系統",
+      category: "field",
+      description: "吃到飽燒肉店三端系統：顧客掃碼點餐、服務生 iPad 座位管理、出餐配額引擎與廚房出單機直印，分層菜單支援多價位方案",
+      tags: ["QR 點餐", "餐飲 POS", "PWA"],
+    },
+    {
+      title: "大衛營高爾夫 擊球預約系統",
+      category: "field",
+      description: "LINE 開球時段預約與出發臺名單管理，球場營運後台一站管理，並已延伸規劃 27 洞三區旗艦版",
+      tags: ["LINE LIFF", "預約系統", "高爾夫"],
+    },
+    {
       title: "北宸導航合作",
       category: "transport",
       description: "物流配送路線規劃系統，整合即時路況、機車/汽車/卡車多種路線模式、多點配送優化",
@@ -132,7 +163,7 @@ export function Portfolio() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
-            2025 作品案例
+            作品案例
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             我們與各產業的領導品牌合作，打造出色的數位產品與服務。

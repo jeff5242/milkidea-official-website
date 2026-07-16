@@ -11,6 +11,8 @@ export function Clients() {
     "第一銀行",
     "裕富數位",
     "台北明明",
+    "宏固電子",
+    "大衛營高爾夫",
   ]
 
   return (
