@@ -1,7 +1,7 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Mail, MessageCircle } from "lucide-react"
+import { JeffPhotoCarousel } from "./jeff-photo-carousel"
 
 export function JeffHero() {
   const stats = [
@@ -94,24 +94,9 @@ export function JeffHero() {
             </div>
           </div>
 
-          {/* Right — Avatar + tags */}
+          {/* Right — Avatar carousel + tags */}
           <div className="flex flex-col items-center gap-8">
-            <div className="relative">
-              <div className="w-48 h-64 md:w-56 md:h-72 rounded-2xl overflow-hidden border border-border shadow-md">
-                <Image
-                  src="/jeff-photo.jpg"
-                  alt="方乃正 Jeff Fang"
-                  width={224}
-                  height={288}
-                  className="w-full h-full object-cover object-right-top"
-                  priority
-                />
-              </div>
-              {/* AI badge */}
-              <div className="absolute -bottom-3 -right-3 bg-accent text-accent-foreground text-xs font-bold px-3 py-1.5 rounded-full shadow-md">
-                AI Enabled
-              </div>
-            </div>
+            <JeffPhotoCarousel />
 
             {/* Capability tags */}
             <div className="flex flex-wrap justify-center gap-2 max-w-sm">
