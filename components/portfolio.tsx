@@ -111,16 +111,16 @@ export function Portfolio() {
       tags: ["LINE LIFF", "企業員工服務", "雙鴻科技"],
     },
     {
-      title: "石頭燒肉 QR 掃碼點餐系統",
+      title: "叼貓菜單 QR 掃碼點餐系統",
       category: "field",
-      description: "吃到飽燒肉店三端系統：顧客掃碼點餐、服務生 iPad 座位管理、出餐配額引擎與廚房出單機直印，分層菜單支援多價位方案",
-      tags: ["QR 點餐", "餐飲 POS", "PWA"],
+      description: "烤魚餐廳三端系統：顧客掃碼點餐（辣度、配料客製）、店員桌位圖與訂單看板、後台菜單管理，整合廚房出單機直印與 LINE 送單通知，已上線營運",
+      tags: ["QR 點餐", "餐飲 POS", "已上線"],
     },
     {
       title: "大衛營高爾夫 擊球預約系統",
       category: "field",
-      description: "LINE 開球時段預約與出發臺名單管理，球場營運後台一站管理，並已延伸規劃 27 洞三區旗艦版",
-      tags: ["LINE LIFF", "預約系統", "高爾夫"],
+      description: "LINE 開球時段預約與出發臺名單管理，球場營運後台一站管理，近期上線會員電子票券發放與核銷，並已延伸規劃 27 洞三區旗艦版",
+      tags: ["LINE LIFF", "預約系統", "電子票券"],
     },
     {
       title: "北宸導航合作",
