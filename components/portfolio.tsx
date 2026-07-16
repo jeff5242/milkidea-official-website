@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
@@ -12,6 +12,49 @@ interface Project {
   description: string
   tags: string[]
   image?: string
+  /** 多張系統營運圖時每 3.5 秒自動切換 */
+  images?: string[]
+}
+
+const IMAGE_SWITCH_INTERVAL_MS = 3500
+
+function ProjectImage({ project }: { project: Project }) {
+  const sources = project.images ?? (project.image ? [project.image] : [])
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    if (sources.length < 2) return
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % sources.length)
+    }, IMAGE_SWITCH_INTERVAL_MS)
+    return () => clearInterval(timer)
+  }, [sources.length])
+
+  if (sources.length === 0) {
+    return (
+      <div className="text-3xl font-bold text-muted-foreground/30 group-hover:scale-105 transition-transform">
+        {project.title.charAt(0)}
+      </div>
+    )
+  }
+
+  return (
+    <div className="relative w-full h-full">
+      {sources.map((src, i) => (
+        <Image
+          key={src}
+          src={src}
+          alt={project.title}
+          width={400}
+          height={300}
+          className={cn(
+            "absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700",
+            i === current ? "opacity-100" : "opacity-0"
+          )}
+        />
+      ))}
+    </div>
+  )
 }
 
 export function Portfolio() {
@@ -113,8 +156,15 @@ export function Portfolio() {
     {
       title: "叼貓菜單 QR 掃碼點餐系統",
       category: "field",
-      description: "烤魚餐廳三端系統：顧客掃碼點餐（辣度、配料客製）、店員桌位圖與訂單看板、後台菜單管理，整合廚房出單機直印與 LINE 送單通知，已上線營運",
-      tags: ["QR 點餐", "餐飲 POS", "已上線"],
+      description: "烤魚餐廳三端系統：顧客掃碼點餐（辣度、配料客製）、店員桌位圖與訂單看板、後台菜單管理，整合廚房出單機直印與 LINE 送單通知，開幕籌備中",
+      tags: ["QR 點餐", "餐飲 POS", "籌備中"],
+      images: ["/images/portfolio/diaomao-menu.jpg", "/images/portfolio/diaomao-custom.jpg"],
+    },
+    {
+      title: "高朋總店 停車場管理系統",
+      category: "field",
+      description: "練習場停車場管理：LINE 銷單核銷、車牌辨識（LPR）白名單、進出場事件與影像紀錄、高朋卡會員綁定，內部營運專用系統，開發完成驗收中",
+      tags: ["LINE 核銷", "車牌辨識", "驗收中"],
     },
     {
       title: "大衛營高爾夫 擊球預約系統",
@@ -198,19 +248,7 @@ export function Portfolio() {
             >
               {/* Project Image */}
               <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted rounded-lg mb-6 flex items-center justify-center overflow-hidden">
-                {project.image ? (
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                  />
-                ) : (
-                  <div className="text-3xl font-bold text-muted-foreground/30 group-hover:scale-105 transition-transform">
-                    {project.title.charAt(0)}
-                  </div>
-                )}
+                <ProjectImage project={project} />
               </div>
 
               <h3 className="text-lg font-semibold text-foreground mb-2">
