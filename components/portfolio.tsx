@@ -146,12 +146,14 @@ export function Portfolio() {
       category: "ai",
       description: "電流、電壓、溫度、功率即時監控與電費預估，三層級告警即時推播，雲端＋地端雙軌架構，已於宜蘭廠區上線運行",
       tags: ["IoT 監控", "智慧工廠", "已上線"],
+      images: ["/images/portfolio/ifdcs-orders.jpg", "/images/portfolio/ifdcs-query.jpg"],
     },
     {
       title: "雙鴻食堂 員工訂餐系統",
       category: "field",
       description: "雙鴻科技五廠區 LINE 訂餐服務：整週便當預訂、每日自動結單、各廠區訂單彙整叫貨、QR 領餐報到與未領取追蹤，取代人工統計",
       tags: ["LINE LIFF", "企業員工服務", "雙鴻科技"],
+      images: ["/images/portfolio/bandon-menu.jpg", "/images/portfolio/bandon-richmenu.jpg"],
     },
     {
       title: "叼貓菜單 QR 掃碼點餐系統",
@@ -161,16 +163,18 @@ export function Portfolio() {
       images: ["/images/portfolio/diaomao-menu.jpg", "/images/portfolio/diaomao-custom.jpg"],
     },
     {
-      title: "高朋總店 停車場管理系統",
+      title: "麥留高爾夫總店 停車場管理系統",
       category: "field",
       description: "練習場停車場管理：LINE 銷單核銷、車牌辨識（LPR）白名單、進出場事件與影像紀錄、高朋卡會員綁定，內部營運專用系統，開發完成驗收中",
       tags: ["LINE 核銷", "車牌辨識", "驗收中"],
+      images: ["/images/portfolio/parking-menu-1.jpg", "/images/portfolio/parking-menu-2.jpg"],
     },
     {
       title: "大衛營高爾夫 擊球預約系統",
       category: "field",
       description: "LINE 開球時段預約與出發臺名單管理，球場營運後台一站管理，近期上線會員電子票券發放與核銷，並已延伸規劃 27 洞三區旗艦版",
       tags: ["LINE LIFF", "預約系統", "電子票券"],
+      images: ["/images/portfolio/davidcamp-voucher.jpg", "/images/portfolio/davidcamp-redeem.jpg"],
     },
     {
       title: "北宸導航合作",
