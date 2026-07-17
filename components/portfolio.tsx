@@ -123,6 +123,21 @@ export function Portfolio() {
       image: "/images/portfolio/yamaha-crm.png",
     },
     {
+      title: "鮮友 / 極鮮 / 神保町 LINE 會員系統",
+      category: "crm",
+      sortYear: 2023,
+      description: "與石頭火鍋同架構的 LINE 官方帳號會員系統，導入鮮友、極鮮、神保町等餐飲品牌：會員卡、點數累積兌換、禮物券管理與分店資訊",
+      tags: ["LINE", "CRM", "餐飲連鎖"],
+    },
+    {
+      title: "Kintone × 地端 MSSQL ERP 資料整合",
+      category: "ecommerce",
+      year: "2026",
+      sortYear: 2026,
+      description: "地端 MSSQL ERP 排程同步至 Kintone 雲端 CRM：欄位對應與資料驗證、krewDashboard 即時營運儀表板，整合 LINE Bot 自然語言查詢數據",
+      tags: ["Kintone", "ERP 整合", "LINE Bot"],
+    },
+    {
       title: "石頭火鍋 Line 官方帳號",
       category: "crm",
       year: "2023",
