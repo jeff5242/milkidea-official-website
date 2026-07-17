@@ -11,12 +11,12 @@ import { JeffContact } from "./components/jeff-contact"
 const PAGE_TITLE = "方乃正 Jeff Fang | 全端工程師 · AI 應用開發"
 const OG_TITLE = "方乃正 Jeff Fang — 全端工程師 × AI 應用開發"
 const OG_DESCRIPTION =
-  "牛奶創意共同創辦人 / CTO，14 年餐飲、零售、設施管理場域整合，AI 能力貫穿三條業務線。"
+  "牛奶創意共同創辦人 / CTO，15 年餐飲、零售、設施管理場域整合，AI 能力貫穿三條業務線。"
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description:
-    "14 年場域整合經驗，9,200+ commits，AI 應用實際落地：精誠資訊 AI 產線、都更審查 POC、Nuwa AI 家教 SaaS。專長：NestJS、React、Python、Claude API、ERP 整合。",
+    "15 年場域整合經驗，9,200+ commits，AI 應用實際落地：精誠資訊 AI 產線、都更審查 POC、Nuwa AI 家教 SaaS。專長：NestJS、React、Python、Claude API、ERP 整合。",
   keywords: [
     "方乃正",
     "Jeff Fang",

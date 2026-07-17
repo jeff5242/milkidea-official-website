@@ -5,7 +5,7 @@ import { JeffPhotoCarousel } from "./jeff-photo-carousel"
 
 export function JeffHero() {
   const stats = [
-    { value: "14+", label: "年開發經驗" },
+    { value: "15+", label: "年開發經驗" },
     { value: "9,200+", label: "Git Commits" },
     { value: "100+", label: "交付應用" },
     { value: "15萬+", label: "服務用戶" },
@@ -35,7 +35,7 @@ export function JeffHero() {
             </p>
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg">
-              14 年深耕餐飲、零售、設施管理場域整合，擅長「最後一哩」——把
+              15 年深耕餐飲、零售、設施管理場域整合，擅長「最後一哩」——把
               ERP、POS、硬體、會員系統串成一套真正能運作的解決方案。
               2021 年起全面導入 LLM，讓 AI 貫穿客服、自動化與資料分析三條業務線。
             </p>

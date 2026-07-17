@@ -40,7 +40,7 @@ export function JeffActivity() {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               本地 Git 統計：<strong className="text-foreground">9,200+ commits</strong>，
-              跨 <strong className="text-foreground">50+ repos</strong>，涵蓋 14 年開發歷程。
+              跨 <strong className="text-foreground">50+ repos</strong>，涵蓋 15 年開發歷程。
               2026 年 AI Coding 工具全面導入後，
               <strong className="text-foreground">同期產出的新專案數量是 2025 年的 5 倍以上</strong>。
             </p>
