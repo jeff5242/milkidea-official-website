@@ -3,7 +3,11 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { CountUp } from "@/components/count-up"
 
+const FOUNDED_YEAR = 2011
+
 export function Hero() {
+  const yearsInBusiness = new Date().getFullYear() - FOUNDED_YEAR
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       {/* Background Pattern */}
@@ -48,7 +52,7 @@ export function Hero() {
           {[
             { value: 60, suffix: "+", label: "應用服務" },
             { value: 8, suffix: "", label: "專業團隊" },
-            { value: 14, suffix: "+", label: "年經驗" },
+            { value: yearsInBusiness, suffix: "+", label: "年經驗" },
             { value: 5, suffix: "萬+", label: "服務用戶" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
