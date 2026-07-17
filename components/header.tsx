@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X, Phone } from "lucide-react"
@@ -8,6 +9,10 @@ import { Button } from "@/components/ui/button"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isHome = pathname === "/"
+  // 首頁用同頁錨點；其他頁（如 /jeff）改用 /#section 先回首頁再捲動
+  const sectionHref = (hash: string) => (isHome ? hash : `/${hash}`)
 
   const navLinks = [
     { href: "#about", label: "關於我們" },
@@ -70,7 +75,7 @@ export function Header() {
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={sectionHref(link.href)}
                   className="text-sm text-user/80 hover:text-foreground transition-colors"
                 >
                   {link.label}
@@ -96,7 +101,7 @@ export function Header() {
                 </a>
               </Button>
               <Button asChild size="sm">
-                <Link href="#contact">立即諮詢</Link>
+                <Link href={sectionHref("#contact")}>立即諮詢</Link>
               </Button>
             </div>
 
@@ -122,7 +127,7 @@ export function Header() {
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
-                    href={link.href}
+                    href={sectionHref(link.href)}
                     className="text-sm text-foreground/80 hover:text-foreground transition-colors py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -145,7 +150,7 @@ export function Header() {
                     </a>
                   </Button>
                   <Button asChild className="w-full justify-start">
-                    <Link href="#contact">立即諮詢</Link>
+                    <Link href={sectionHref("#contact")}>立即諮詢</Link>
                   </Button>
                 </div>
               </nav>
