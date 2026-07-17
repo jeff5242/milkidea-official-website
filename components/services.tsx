@@ -61,7 +61,7 @@ export function Services() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
-            2025 服務項目
+            {new Date().getFullYear()} 服務項目
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             從設計到開發，我們提供一站式的數位解決方案，協助您的企業在數位時代脫穎而出。

@@ -5,7 +5,7 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { Reveal } from "@/components/reveal"
 
-type Category = "all" | "ecommerce" | "crm" | "finance" | "ai" | "field" | "transport" | "health"
+type Category = "all" | "ecommerce" | "crm" | "finance" | "ai" | "field" | "web" | "transport" | "health"
 
 interface Project {
   title: string
@@ -72,6 +72,7 @@ export function Portfolio() {
     { value: "finance", label: "金融科技" },
     { value: "ai", label: "AI 數位轉型" },
     { value: "field", label: "場域整合" },
+    { value: "web", label: "網站設計" },
     { value: "transport", label: "交通導航" },
     { value: "health", label: "醫療教育" },
   ]
@@ -210,6 +211,55 @@ export function Portfolio() {
       description: "LINE 開球時段預約與出發臺名單管理，球場營運後台一站管理，近期上線會員電子票券發放與核銷，並已延伸規劃 27 洞三區旗艦版",
       tags: ["LINE LIFF", "預約系統", "電子票券"],
       images: ["/images/portfolio/davidcamp-voucher.jpg", "/images/portfolio/davidcamp-redeem.jpg"],
+    },
+    {
+      title: "女媧 Nuwa AI 家教 SaaS 平台",
+      category: "web",
+      sortYear: 2026,
+      description: "AI 家教與命理 SaaS 平台官網與應用介面，GPT 多師多科、PDF 知識庫、課程追蹤與訂閱金流",
+      tags: ["SaaS", "AI 應用", "自主產品"],
+      image: "/images/portfolio/web-nuwa.jpg",
+    },
+    {
+      title: "CGX CoreGrid AI 算力交易平台",
+      category: "web",
+      sortYear: 2025,
+      description: "AI 算力交易平台形象官網，深色科技風視覺與產品介紹",
+      tags: ["形象官網", "科技業", "RWD"],
+      image: "/images/portfolio/web-coregrid.jpg",
+    },
+    {
+      title: "NexiFuel GPU 算力平台官網",
+      category: "web",
+      sortYear: 2025,
+      description: "GPU 算力平台形象官網，產品方案展示與詢價導流",
+      tags: ["形象官網", "科技業", "RWD"],
+      image: "/images/portfolio/web-nexifuel.jpg",
+    },
+    {
+      title: "GoodClinic 好診所 連鎖官網",
+      category: "web",
+      sortYear: 2025,
+      description: "診所連鎖形象官網（嘉南／新雅院區），門診資訊、醫師陣容與線上預約導流",
+      tags: ["形象官網", "醫療院所", "RWD"],
+      image: "/images/portfolio/web-goodclinic.jpg",
+    },
+    {
+      title: "澎湖 海島拱門民宿 Landing Page",
+      category: "web",
+      sortYear: 2025,
+      description: "海島風民宿一頁式官網，房型展示、周邊景點與訂房導流，圖片輪播與燈箱瀏覽",
+      tags: ["一頁式網站", "旅宿業", "訂房導流"],
+      image: "/images/portfolio/web-ponhu.jpg",
+    },
+    {
+      title: "興岩非營利幼兒園 形象官網",
+      category: "web",
+      year: "2023",
+      sortYear: 2023,
+      description: "幼兒園形象官網，招生資訊、師資陣容、公佈欄與 LINE 好友導流，溫暖插畫風視覺",
+      tags: ["形象官網", "教育機構", "LINE 導流"],
+      image: "/images/portfolio/web-shinyan.jpg",
     },
     {
       title: "北宸導航合作",
