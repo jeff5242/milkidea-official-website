@@ -102,6 +102,7 @@ export function Portfolio() {
       sortYear: 2026,
       description: "六家百貨櫃位 POS 訂單每日自動轉入 Ecount ERP 銷貨單，整合庫存同步、每週補貨建議與 LINE 店長日報/週報推播",
       tags: ["ERP 整合", "RPA 自動化", "零售連鎖"],
+      images: ["/images/portfolio/iam-dashboard.jpg", "/images/portfolio/iam-inventory.jpg"],
     },
     {
       title: "永豐券村 Cardo",
