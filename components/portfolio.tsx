@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import { Reveal } from "@/components/reveal"
 
 type Category = "all" | "ecommerce" | "crm" | "finance" | "ai" | "field" | "transport" | "health"
 
@@ -245,10 +246,10 @@ export function Portfolio() {
 
         {/* Projects Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProjects.map((project) => (
+          {filteredProjects.map((project, index) => (
+            <Reveal key={project.title} delayMs={(index % 3) * 90}>
             <div
-              key={project.title}
-              className="group p-6 bg-card rounded-xl border border-border hover:border-foreground/20 transition-all hover:shadow-md"
+              className="group h-full p-6 bg-card rounded-xl border border-border hover:border-foreground/20 transition-all hover:shadow-md"
             >
               {/* Project Image */}
               <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted rounded-lg mb-6 flex items-center justify-center overflow-hidden">
@@ -273,6 +274,7 @@ export function Portfolio() {
                 ))}
               </div>
             </div>
+            </Reveal>
           ))}
         </div>
       </div>

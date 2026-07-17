@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { CountUp } from "@/components/count-up"
 
 export function Hero() {
   return (
@@ -45,14 +46,14 @@ export function Hero() {
         {/* Stats */}
         <div className="mt-20 md:mt-32 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
           {[
-            { value: "60+", label: "應用服務" },
-            { value: "8", label: "專業團隊" },
-            { value: "14+", label: "年經驗" },
-            { value: "5萬+", label: "服務用戶" },
+            { value: 60, suffix: "+", label: "應用服務" },
+            { value: 8, suffix: "", label: "專業團隊" },
+            { value: 14, suffix: "+", label: "年經驗" },
+            { value: 5, suffix: "萬+", label: "服務用戶" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                {stat.value}
+                <CountUp value={stat.value} suffix={stat.suffix} />
               </div>
               <div className="text-sm text-muted-foreground">{stat.label}</div>
             </div>

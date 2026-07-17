@@ -115,7 +115,10 @@ export function Contact() {
 
           {/* Right Form */}
           <div className="bg-card text-card-foreground p-8 rounded-2xl">
-            <h3 className="text-xl font-semibold mb-6">填寫諮詢表單</h3>
+            <h3 className="text-xl font-semibold mb-2">填寫諮詢表單</h3>
+            <p className="text-xs text-muted-foreground mb-6">
+              14 年 · 60+ 應用交付 · 精誠資訊、玉山證券、山葉機車等品牌信賴
+            </p>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
