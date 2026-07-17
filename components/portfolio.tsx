@@ -96,7 +96,7 @@ export function Portfolio() {
       image: "/images/portfolio/ricehouse-erp.png",
     },
     {
-      title: "百貨櫃位 Shopline × Ecount ERP 整合",
+      title: "我適文創 Shopline × Ecount ERP 整合",
       category: "ecommerce",
       year: "2026",
       sortYear: 2026,

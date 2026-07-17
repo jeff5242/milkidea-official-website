@@ -12,6 +12,7 @@ const clients = [
   "台北明明",
   "宏固電子",
   "大衛營高爾夫",
+  "我適文創",
 ]
 
 const trustBadges = [
