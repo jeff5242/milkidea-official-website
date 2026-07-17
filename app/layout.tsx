@@ -11,7 +11,7 @@ const SITE_URL = 'https://www.milkidea.com'
 const SITE_NAME = '牛奶創意 Milkidea'
 const DEFAULT_TITLE = '牛奶創意 Milkidea｜客製化軟體開發．工廠 AIoT．AI 數位轉型顧問'
 const DEFAULT_DESCRIPTION =
-  '牛奶創意成立於 2011 年，專精客製化軟體開發、工廠 AIoT 設備故障預知（IFDCS）、電商 ERP／CRM 整合與 AI 數位轉型顧問，已交付 60+ 應用服務，歡迎企業與政府單位洽詢。'
+  '牛奶創意成立於 2011 年，專精客製化軟體開發、工廠 AIoT 設備故障預知（IFDCS）、電商 ERP／CRM 整合與 AI 數位轉型顧問，已交付 100+ 應用服務、服務逾 15 萬名使用者，歡迎企業與政府單位洽詢。'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

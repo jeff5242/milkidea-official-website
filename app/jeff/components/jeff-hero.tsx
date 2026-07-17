@@ -7,8 +7,8 @@ export function JeffHero() {
   const stats = [
     { value: "14+", label: "年開發經驗" },
     { value: "9,200+", label: "Git Commits" },
-    { value: "60+", label: "交付應用" },
-    { value: "5萬+", label: "服務用戶" },
+    { value: "100+", label: "交付應用" },
+    { value: "15萬+", label: "服務用戶" },
   ]
 
   return (

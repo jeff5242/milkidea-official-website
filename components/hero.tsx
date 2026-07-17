@@ -18,7 +18,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-secondary px-4 py-2 rounded-full text-sm text-muted-foreground mb-8">
             <span className="w-2 h-2 bg-accent rounded-full" />
-            成立於 2011 年 · 超過 60+ 應用服務
+            成立於 2011 年 · 超過 100+ 應用服務 · 15 萬+ 使用者
           </div>
 
           {/* Headline */}
@@ -50,10 +50,10 @@ export function Hero() {
         {/* Stats */}
         <div className="mt-20 md:mt-32 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
           {[
-            { value: 60, suffix: "+", label: "應用服務" },
-            { value: 8, suffix: "", label: "專業團隊" },
+            { value: 100, suffix: "+", label: "應用服務" },
+            { value: 15, suffix: "萬+", label: "服務用戶" },
+            { value: 50, suffix: "+", label: "企業客戶" },
             { value: yearsInBusiness, suffix: "+", label: "年經驗" },
-            { value: 5, suffix: "萬+", label: "服務用戶" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-foreground mb-2">
