@@ -200,7 +200,7 @@ export function Portfolio() {
       sortYear: 2026,
       description: "練習場停車場管理：LINE 銷單核銷、車牌辨識（LPR）白名單、進出場事件與影像紀錄、高朋卡會員綁定，內部營運專用系統，開發完成驗收中",
       tags: ["LINE 核銷", "車牌辨識", "驗收中"],
-      images: ["/images/portfolio/parking-menu-1.jpg", "/images/portfolio/parking-menu-2.jpg"],
+      images: ["/images/portfolio/parking-member.jpg", "/images/portfolio/parking-records.jpg", "/images/portfolio/parking-richmenu.jpg"],
     },
     {
       title: "大衛營高爾夫 擊球預約系統",
