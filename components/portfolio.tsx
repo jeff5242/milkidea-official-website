@@ -193,7 +193,7 @@ export function Portfolio() {
       images: ["/images/portfolio/diaomao-menu.jpg", "/images/portfolio/diaomao-custom.jpg"],
     },
     {
-      title: "麥留高爾夫總店 停車場管理系統",
+      title: "三地高市高爾夫總店 停車場管理系統",
       category: "field",
       year: "2026",
       sortYear: 2026,
