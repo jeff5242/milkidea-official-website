@@ -11,13 +11,15 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
   const isHome = pathname === "/"
-  // 首頁用同頁錨點；其他頁（如 /jeff）改用 /#section 先回首頁再捲動
-  const sectionHref = (hash: string) => (isHome ? hash : `/${hash}`)
+  // 首頁用同頁錨點；其他頁（如 /jeff）改用 /#section 先回首頁再捲動；一般路徑（/cases 等）原樣使用
+  const sectionHref = (href: string) =>
+    href.startsWith("#") ? (isHome ? href : `/${href}`) : href
 
   const navLinks = [
     { href: "#about", label: "關於我們" },
     { href: "#services", label: "服務項目" },
-    { href: "#portfolio", label: "作品案例" },
+    { href: "/cases", label: "案例庫" },
+    { href: "/trust", label: "資安信任" },
     { href: "#golfriend", label: "旗艦產品" },
     { href: "#contact", label: "聯絡我們" },
   ]

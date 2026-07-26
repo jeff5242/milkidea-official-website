@@ -12,9 +12,10 @@ export function Footer() {
       { label: "交通導航", href: "#services" },
     ],
     company: [
-      { label: "關於我們", href: "#about" },
-      { label: "作品案例", href: "#portfolio" },
-      { label: "聯絡我們", href: "#contact" },
+      { label: "關於我們", href: "/#about" },
+      { label: "案例庫", href: "/cases" },
+      { label: "資安與信任", href: "/trust" },
+      { label: "聯絡我們", href: "/#contact" },
     ],
   }
 
