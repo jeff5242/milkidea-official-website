@@ -51,6 +51,17 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    slug: "y-connect-twn",
+    title: "YAMAHA Y-Connect TWN 車聯網 APP",
+    category: "transport",
+    industry: "製造科技",
+    year: "2026",
+    sortYear: 2026,
+    description:
+      "台灣山葉機車官方車聯網 APP（iOS／Android 雙平台）：手機即時儀表板顯示轉速、油門開度與引擎水溫，GPS 騎乘軌跡與旅程紀錄、最高速／平均速分析與社群分享、測速照相預警導航、保養提醒與線上預約保養，支援油車與電動車指定機種，持續進行版本維護與功能更新",
+    tags: ["車聯網", "iOS/Android", "持續維護中"],
+  },
+  {
     slug: "urich-bnpl-app",
     title: "裕富數位 Urich APP",
     category: "ecommerce",
