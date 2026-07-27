@@ -54,6 +54,34 @@ const SECURITY_PRACTICES = [
   },
 ]
 
+const SSDLC_STAGES = [
+  {
+    name: "需求",
+    activity: "安全與隱私需求界定、系統防護等級評估（CIA）",
+    practice: "報價前先發需求釐清清單，界定機敏資料範圍與防護需求；政府案對應資安責任等級之防護基準",
+  },
+  {
+    name: "設計",
+    activity: "架構安全審視、縮小攻擊面",
+    practice: "權限分層與 API 驗證納入系統設計，機敏服務不對外暴露",
+  },
+  {
+    name: "開發",
+    activity: "安全編碼、防範 OWASP Top 10、機敏資料保護",
+    practice: "Git 版控與程式碼審查、金鑰以環境變數管理不入版控、資料權限控管與操作日誌",
+  },
+  {
+    name: "測試",
+    activity: "原始碼安全掃描、弱點修補",
+    practice: "金融客戶專案通過 Checkmarx 原始碼掃描弱點修補與回覆審查（第一銀行，2026）",
+  },
+  {
+    name: "部署維運",
+    activity: "上版流程管控、監控告警、備份與事故應變",
+    practice: "HTTPS/TLS 全程加密、雲端存取權限控管、版本化部署與多重備份、系統監控告警",
+  },
+] as const
+
 const COMPANY_FACTS = [
   { label: "公司名稱", value: "牛奶股份有限公司（MILK IDEA INC.）" },
   { label: "統一編號", value: "53535550" },
@@ -157,13 +185,50 @@ export default function TrustPage() {
           </div>
         </section>
 
-        {/* 開發資安實務 */}
+        {/* SSDLC */}
         <section className="py-16 bg-card border-y border-border">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+              安全軟體開發生命週期（SSDLC）
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl">
+              資安不是上線前才做的檢查，而是內建於開發每個階段。我們的開發流程對應 SSDLC 各階段安全活動，政府專案並依「資通安全責任等級分級辦法」之系統防護基準辦理：
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-border text-left">
+                    <th className="py-3 pr-4 font-semibold text-foreground whitespace-nowrap">階段</th>
+                    <th className="py-3 pr-4 font-semibold text-foreground">安全活動</th>
+                    <th className="py-3 font-semibold text-foreground">我們的實務</th>
+                  </tr>
+                </thead>
+                <tbody className="text-muted-foreground">
+                  {SSDLC_STAGES.map((stage) => (
+                    <tr key={stage.name} className="border-b border-border/60 align-top">
+                      <td className="py-3 pr-4 font-medium text-foreground whitespace-nowrap">
+                        {stage.name}
+                      </td>
+                      <td className="py-3 pr-4 leading-relaxed">{stage.activity}</td>
+                      <td className="py-3 leading-relaxed">{stage.practice}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-6 text-xs text-muted-foreground/70">
+              開發流程之文件化與證據留存，正隨 ISO 27001 ISMS 導入持續制度化。
+            </p>
+          </div>
+        </section>
+
+        {/* 開發資安實務 */}
+        <section className="py-16 bg-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">日常開發資安實務</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {SECURITY_PRACTICES.map((practice) => (
-                <div key={practice.title} className="p-5 bg-background border border-border rounded-xl">
+                <div key={practice.title} className="p-5 bg-card border border-border rounded-xl">
                   <practice.icon className="w-5 h-5 text-accent mb-3" />
                   <h3 className="text-sm font-semibold text-foreground mb-1.5">{practice.title}</h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">
@@ -176,7 +241,7 @@ export default function TrustPage() {
         </section>
 
         {/* 公司登記與資格 */}
-        <section className="py-16 bg-background">
+        <section className="py-16 bg-card border-y border-border">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">公司登記與資格</h2>
             <div className="grid md:grid-cols-2 gap-8">
