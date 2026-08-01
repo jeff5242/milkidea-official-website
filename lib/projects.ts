@@ -4,6 +4,7 @@ export type Category =
   | "finance"
   | "ai"
   | "field"
+  | "gis"
   | "web"
   | "transport"
   | "health"
@@ -14,6 +15,7 @@ export type Industry =
   | "餐飲"
   | "零售電商"
   | "農業食品"
+  | "公部門"
   | "運動休閒"
   | "教育"
   | "醫療長照"
@@ -26,6 +28,7 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   finance: "金融科技",
   ai: "AI 數位轉型",
   field: "場域整合",
+  gis: "GIS 地理資訊",
   web: "網站設計",
   transport: "交通導航",
   health: "醫療教育",
@@ -78,12 +81,89 @@ export const PROJECTS: Project[] = [
     title: "米屋 ERP/B2B/B2C 系統",
     category: "ecommerce",
     industry: "農業食品",
-    year: "2019–2026",
+    year: "2018–2026",
     sortYear: 2026,
     description:
-      "完整稻米加工管理系統，涵蓋派工、過磅、烘乾監控、精米、品檢、包裝、出貨退貨、田間管理等 12 大模組，並串接物流貨到付款自動對帳銷帳",
+      "完整稻米加工管理系統，涵蓋派工、過磅、烘乾監控、精米、品檢、包裝、出貨退貨、田間管理等 12 大模組，並串接物流貨到付款自動對帳銷帳；2018 年中衛發展中心輔導公開評選得標起長期合作，並持續營運米屋智農 iOS App（整合藍新金流與電子發票）",
     tags: ["ERP", "農業科技", "物流對帳自動化"],
     image: "/images/portfolio/ricehouse-erp.png",
+  },
+  {
+    slug: "taipei-traffic-gis",
+    title: "臺北市交通地理資訊系統加值（圖根點模組）",
+    category: "gis",
+    industry: "公部門",
+    year: "2025–2026",
+    sortYear: 2026,
+    description:
+      "臺北市自動化道路資訊蒐集暨交通地理資訊系統加值案（台灣世曦分包）：開發圖根點購買模組、開放編輯與單點微調、滅失回報、巡查與查詢介面 RWD 改版，分三期開發並完成資料遷移",
+    tags: ["GIS", "公部門", "台灣世曦"],
+  },
+  {
+    slug: "ceci-water-monitoring",
+    title: "即時水情監測系統",
+    category: "gis",
+    industry: "公部門",
+    year: "2025",
+    sortYear: 2025,
+    description:
+      "即時水情監測核心系統與縣市介面客製化（台灣世曦分包）：跨平台 GIS 圖台介接機關圖資與 Google 底圖，動態座標、地圖套疊、量測與列印工具列，門牌／地號 API 定位查詢",
+    tags: ["GIS 圖台", "水情監測", "台灣世曦"],
+  },
+  {
+    slug: "sewer-pipeline-gis",
+    title: "下水道營運管理與管線 GIS 系列",
+    category: "gis",
+    industry: "公部門",
+    year: "2024–2026",
+    sortYear: 2026,
+    description:
+      "台灣世曦合格分包廠商長期合作：雲林縣、苗栗縣下水道營運管理系統功能開發，桃園市公共設施管線位置調查（埋深讀數判釋）系統建置，及北部治水計畫雨水下水道規劃報告數位典藏",
+    tags: ["GIS", "下水道管線", "台灣世曦"],
+  },
+  {
+    slug: "tari-flower-breeding",
+    title: "農試所花卉育種調查系統",
+    category: "field",
+    industry: "公部門",
+    year: "2021",
+    sortYear: 2021,
+    description:
+      "農業部農業試驗所花卉研究中心：花卉育種調查行動 App 與資訊管理系統，QR Code 親本資料管理、雜交組合與性狀調查，支援火鶴花、文心蘭、蝴蝶蘭，並開放高雄區、臺中區農改場帳號使用",
+    tags: ["公部門", "農業科技", "行動 App"],
+  },
+  {
+    slug: "knownyou-breeding-app",
+    title: "農友種苗 行動育種調查 App",
+    category: "field",
+    industry: "農業食品",
+    year: "2019–2022",
+    sortYear: 2022,
+    description:
+      "田間育種調查 Android App：十餘種主要作物各自性狀定義檔，平板於田間逐株調查並上傳雲端資料庫分析，整合農友端 API 與微型氣象站，後續擴展至高雄區農業改良場使用",
+    tags: ["農業科技", "田間調查", "Android"],
+  },
+  {
+    slug: "ricehouse-smart-agri-4",
+    title: "壽米屋 智慧農業 4.0（農業科專）",
+    category: "ai",
+    industry: "農業食品",
+    year: "2017",
+    sortYear: 2017,
+    description:
+      "農委會 106 年度智慧農業 4.0 業界參與計畫：稻作田間微氣象觀測、智能倉儲蟲害溫控、智能配置反饋系統與品保數據模型，與村田電子合作土壤感測，支援連續多年績優稻米產銷專業區",
+    tags: ["智慧農業", "IoT 感測", "政府補助計畫"],
+  },
+  {
+    slug: "sanshui-poultry-performance",
+    title: "山水畜產 土雞場績效紀錄系統",
+    category: "field",
+    industry: "農業食品",
+    year: "2018",
+    sortYear: 2018,
+    description:
+      "高雄山水畜產各土雞場飼養績效紀錄與統計分析系統，中衛發展中心農業經營組引介之農業數位化案例",
+    tags: ["畜牧業", "數據分析", "農業數位化"],
   },
   {
     slug: "iam-shopline-ecount",
