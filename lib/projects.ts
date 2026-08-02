@@ -155,17 +155,6 @@ export const PROJECTS: Project[] = [
     tags: ["智慧農業", "IoT 感測", "政府補助計畫"],
   },
   {
-    slug: "sanshui-poultry-performance",
-    title: "山水畜產 土雞場績效紀錄系統",
-    category: "field",
-    industry: "農業食品",
-    year: "2018",
-    sortYear: 2018,
-    description:
-      "高雄山水畜產各土雞場飼養績效紀錄與統計分析系統，中衛發展中心農業經營組引介之農業數位化案例",
-    tags: ["畜牧業", "數據分析", "農業數位化"],
-  },
-  {
     slug: "iam-shopline-ecount",
     title: "我適文創 Shopline × Ecount ERP 整合",
     category: "ecommerce",
