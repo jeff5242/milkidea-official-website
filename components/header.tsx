@@ -21,6 +21,7 @@ export function Header() {
     { href: "/cases", label: "案例庫" },
     { href: "/trust", label: "資安信任" },
     { href: "#golfriend", label: "旗艦產品" },
+    { href: "/ai-training-slides.html", label: "AI 學習簡報分享" },
     { href: "#contact", label: "聯絡我們" },
   ]
 
