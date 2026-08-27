@@ -393,6 +393,28 @@ export const PROJECTS: Project[] = [
     image: "/images/portfolio/web-shinyan.jpg",
   },
   {
+    slug: "polstar-map-api",
+    title: "Polstar 北極星圖資 API 平台官網",
+    category: "web",
+    industry: "交通物流",
+    year: "2022",
+    sortYear: 2022,
+    description:
+      "協助 GPS 導航方案商北極星（Polstar）開發新版官網與圖資 API 服務平台，整合 Mapbox 地圖展示、API Key 管理、企業方案訂閱金流，提供開發者文件與範例展示",
+    tags: ["圖資 API", "Mapbox", "企業平台"],
+  },
+  {
+    slug: "tzchimen-fortune",
+    title: "子奇門 奇門遁甲命理服務平台",
+    category: "web",
+    industry: "教育",
+    year: "2020",
+    sortYear: 2020,
+    description:
+      "奇門遁甲命理線上服務平台：會員註冊與 SMS 驗證、命盤排列與解讀、課程預約排班日曆、永豐 SunPay 線上金流整合付款",
+    tags: ["命理服務", "線上金流", "會員系統"],
+  },
+  {
     slug: "beichen-navigation",
     title: "北宸導航合作",
     category: "transport",
