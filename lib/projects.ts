@@ -402,6 +402,7 @@ export const PROJECTS: Project[] = [
     description:
       "協助 GPS 導航方案商北極星（Polstar）開發新版官網與圖資 API 服務平台，整合 Mapbox 地圖展示、API Key 管理、企業方案訂閱金流，提供開發者文件與範例展示",
     tags: ["圖資 API", "Mapbox", "企業平台"],
+    image: "/images/portfolio/web-polstar.jpg",
   },
   {
     slug: "tzchimen-fortune",
@@ -413,6 +414,7 @@ export const PROJECTS: Project[] = [
     description:
       "奇門遁甲命理線上服務平台：會員註冊與 SMS 驗證、命盤排列與解讀、課程預約排班日曆、永豐 SunPay 線上金流整合付款",
     tags: ["命理服務", "線上金流", "會員系統"],
+    image: "/images/portfolio/web-tzchimen.jpg",
   },
   {
     slug: "beichen-navigation",
