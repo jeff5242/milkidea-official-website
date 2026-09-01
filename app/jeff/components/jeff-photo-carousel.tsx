@@ -37,7 +37,8 @@ export function JeffPhotoCarousel() {
             <Image
               key={photo.src}
               src={photo.src}
-              alt={photo.caption || "方乃正 Jeff Fang"}
+              alt={i === current ? (photo.caption || "方乃正 Jeff Fang") : ""}
+              aria-hidden={i !== current}
               width={448}
               height={576}
               priority={i === 0}

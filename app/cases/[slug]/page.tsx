@@ -100,14 +100,14 @@ export default async function CasePage({ params }: CasePageProps) {
             <section className="mb-12">
               <h2 className="text-xl font-semibold text-foreground mb-4">系統畫面</h2>
               <div className={screenshots.length > 1 ? "grid sm:grid-cols-2 gap-4" : ""}>
-                {screenshots.map((src) => (
+                {screenshots.map((src, index) => (
                   <div
                     key={src}
                     className="overflow-hidden rounded-xl border border-border bg-secondary"
                   >
                     <Image
                       src={src}
-                      alt={project.title}
+                      alt={screenshots.length > 1 ? `${project.title} 系統畫面 ${index + 1}` : project.title}
                       width={800}
                       height={600}
                       className="w-full h-auto"
