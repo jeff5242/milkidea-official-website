@@ -196,7 +196,7 @@ export function JeffAllCases() {
             完整作品案例
           </h2>
           <p className="text-lg text-muted-foreground">
-            橫跨 AI、ERP 整合、CRM、IoT 硬體與金融科技，16 個代表案例。
+            橫跨 AI、ERP 整合、CRM、IoT 硬體與金融科技，17 個代表案例。
           </p>
         </div>
 
