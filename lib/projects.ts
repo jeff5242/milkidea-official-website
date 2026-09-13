@@ -84,6 +84,23 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    slug: "digital-signage-cms",
+    title: "數位看板廣告播放系統（Signage CMS）",
+    category: "field",
+    industry: "餐飲",
+    year: "2026",
+    sortYear: 2026,
+    description:
+      "門市數位看板的內容管理與播放系統，已導入台北 ATT4Fun 餐廳現場。播放端不需安裝專用軟體：播放機開啟播放網址、輸入後台給的 6 位配對碼即完成綁定，之後每 10 秒回報心跳，後台一眼看得出每台螢幕是上線或離線、現在播的是哪一支節目，並可遠端重新載入／停止／播放。節目以視覺化編輯器排版，同一個畫面可同時放圖片輪播、影片、影音混播與跑馬燈，元素以百分比定位、即時預覽；解析度支援單螢幕 1920×1080 到三螢幕 5760×1080、雙 4K 拼接 7680×2160，每台裝置設定自己在牆上的角色（完整畫面／左／中／右），多台機器就組成一面大牆。素材庫支援圖片、影片、音樂與 PDF 上傳（單檔 500MB）。排程發送可指定節目 × 裝置 × 起訖時間，留空即持續播放，並以優先權數字插播；臨時公告則用「插播字幕」直接推即時跑馬燈到指定螢幕，可設文字色、底色、字級與輪播秒數，不必重做整支節目",
+    tags: ["數位看板", "多螢幕拼接", "遠端排程播放", "餐飲門市"],
+    images: [
+      "/images/portfolio/signage-devices.jpg",
+      "/images/portfolio/signage-program-editor.jpg",
+      "/images/portfolio/signage-schedule.jpg",
+      "/images/portfolio/signage-player-pairing.jpg",
+    ],
+  },
+  {
     slug: "himitsu-association-os",
     title: "HiMitsu 公協會秘書處系統",
     category: "crm",
