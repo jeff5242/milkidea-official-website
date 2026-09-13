@@ -13,6 +13,7 @@ export type Industry =
   | "金融證券"
   | "製造科技"
   | "餐飲"
+  | "公協會"
   | "零售電商"
   | "農業食品"
   | "公部門"
@@ -64,6 +65,40 @@ export const PROJECTS: Project[] = [
       "台灣山葉機車官方車聯網 APP（iOS／Android 雙平台）：手機即時儀表板顯示轉速、油門開度與引擎水溫，GPS 騎乘軌跡與旅程紀錄、電動車遠端控制（車廂開啟、車輛上鎖、藍牙尋車）、測速照相預警導航、保養提醒與線上預約保養，支援油車與電動車指定機種，持續進行版本維護與功能更新",
     tags: ["車聯網", "iOS/Android", "持續維護中"],
     images: ["/images/portfolio/y-connect-1.jpg", "/images/portfolio/y-connect-2.jpg"],
+  },
+  {
+    slug: "restaurant-online-booking",
+    title: "餐廳線上訂位與現場報到系統",
+    category: "field",
+    industry: "餐飲",
+    year: "2026",
+    sortYear: 2026,
+    description:
+      "多店家餐飲訂位 SaaS：每間餐廳一組專屬網址，同一頁就是落地頁與訂位頁（店家簡介、菜單、訂位須知、訂位表單），可直接貼到 Google 商家檔案導流。顧客免下載 App、免註冊，四步驟完成訂位（選人數 → 選時段 → 留資料 → 取得訂位編號），庫存以人數計、以資料庫交易鎖防止同時段超賣。店家後台當日訂單一鍵報到、標記未到、現場客登記；總部後台可產生 Google 地圖／店內 QR Code／Facebook／Instagram／LINE 等六條導流網址，並依來源計算實際到店率（到店 ÷（到店＋未到）），把「廣告帶來幾組訂位」變成「真的走進店裡幾個人」。顧客端內建七國語系，測試站已上線",
+    tags: ["餐飲訂位", "多店家 SaaS", "到店率成效報表", "防超賣交易鎖"],
+    images: [
+      "/images/portfolio/diaomao-booking-landing.jpg",
+      "/images/portfolio/diaomao-booking-slots.jpg",
+      "/images/portfolio/diaomao-booking-merchant.jpg",
+      "/images/portfolio/diaomao-booking-report.jpg",
+    ],
+  },
+  {
+    slug: "himitsu-association-os",
+    title: "HiMitsu 公協會秘書處系統",
+    category: "crm",
+    industry: "公協會",
+    year: "2026",
+    sortYear: 2026,
+    description:
+      "公協會秘書處的多租戶營運系統，一套服務多個協會、資料以資料庫層級隔離。會員採自然人與會籍分離的資料模型，處理團體會員代表、雙身分、榮譽／永久會員等實務型態，所有異動自動留下審計軌跡；權限以角色矩陣為單一事實來源，支援邀請入職。年會與活動端提供名單匯入、來賓與現場報名、報到台一鍵報到與名牌／禮品／選票發放、出席儀表板、宴會桌次容量控管與現場投影桌次表；會費可開繳批次、回報與財務確認，未繳者可設定領取鎖。現場另有離線報到機：斷網照常報到，恢復連線自動回放並與另一台合併，避免大會現場網路不穩就卡住報到動線。源於一場真實年會全程數位化的實戰經驗",
+    tags: ["公協會 SaaS", "多租戶隔離", "年會報到", "離線報到機"],
+    images: [
+      "/images/portfolio/himitsu-members.jpg",
+      "/images/portfolio/himitsu-checkin.jpg",
+      "/images/portfolio/himitsu-tables.jpg",
+      "/images/portfolio/himitsu-dashboard.jpg",
+    ],
   },
   {
     slug: "urich-bnpl-app",

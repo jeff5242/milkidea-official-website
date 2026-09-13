@@ -5,6 +5,7 @@ import {
   Factory,
   Car,
   HeartPulse,
+  CalendarCheck,
   ArrowUpRight,
 } from "lucide-react"
 import Link from "next/link"
@@ -45,6 +46,13 @@ export function Services() {
       description:
         "充電樁服務、車載導航、工程專案等交通相關系統開發。",
       examples: ["北宸導航合作", "山葉機車導航", "世曦工程專案", "充電樁服務"],
+    },
+    {
+      icon: CalendarCheck,
+      title: "預約報到與會務系統",
+      description:
+        "餐廳線上訂位、公協會會員與年會報到，從線上預約一路接到現場履約，並產出到店率與出席成效。",
+      examples: ["餐廳線上訂位與現場報到系統", "HiMitsu 公協會秘書處系統", "叼貓菜單 QR 掃碼點餐"],
     },
     {
       icon: HeartPulse,
