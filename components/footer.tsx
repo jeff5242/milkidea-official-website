@@ -3,6 +3,7 @@ import Image from "next/image"
 import { MapPin, Phone, Navigation } from "lucide-react"
 import {
   COMPANY_ADDRESS,
+  COMPANY_CONTACT_PERSON,
   COMPANY_PHONE_DISPLAY,
   COMPANY_PHONE_HREF,
   GOOGLE_MAPS_URL,
@@ -117,7 +118,7 @@ export function Footer() {
             © {currentYear} 牛奶創意 Milkidea. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            方乃正 0936-923-912
+            {COMPANY_CONTACT_PERSON} {COMPANY_PHONE_DISPLAY}
           </p>
         </div>
       </div>

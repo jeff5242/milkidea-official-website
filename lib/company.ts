@@ -5,8 +5,9 @@
 
 export const COMPANY_ADDRESS = "台北市中正區忠孝西路一段45號9樓之5"
 
-export const COMPANY_PHONE_DISPLAY = "02-2371-1050"
-export const COMPANY_PHONE_HREF = "tel:+886223711050"
+export const COMPANY_CONTACT_PERSON = "方乃正"
+export const COMPANY_PHONE_DISPLAY = "0936-923-912"
+export const COMPANY_PHONE_HREF = "tel:+886936923912"
 
 export const COMPANY_EMAIL = "jeff@milkidea.com"
 

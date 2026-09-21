@@ -17,7 +17,7 @@ export const organizationJsonLd = {
   image: `${SITE_URL}/images/logo-milkidea.png`,
   description:
     "牛奶創意 Milkidea 成立於 2011 年，是台北的軟體開發公司，專精客製化系統開發、工廠 AIoT 設備故障預知（IFDCS）、電商 ERP／CRM 整合、都更 AI 協審系統與 LINE Bot 開發，服務台灣企業與政府單位。",
-  telephone: "+886-2-2371-1050",
+  telephone: "+886-936-923-912",
   email: "jeff@milkidea.com",
   foundingDate: "2011-09-09",
   founder: {
