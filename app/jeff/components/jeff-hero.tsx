@@ -6,7 +6,7 @@ import { JeffPhotoCarousel } from "./jeff-photo-carousel"
 export function JeffHero() {
   const stats = [
     { value: "15+", label: "年開發經驗" },
-    { value: "9,200+", label: "Git Commits" },
+    { value: "7,900+", label: "Git Commits" },
     { value: "100+", label: "交付應用" },
     { value: "15萬+", label: "服務用戶" },
   ]

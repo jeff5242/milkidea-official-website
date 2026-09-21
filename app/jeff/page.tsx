@@ -16,7 +16,7 @@ const OG_DESCRIPTION =
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description:
-    "15 年場域整合經驗，9,200+ commits，AI 應用實際落地：精誠資訊 AI 產線、都更審查 POC、Nuwa AI 家教 SaaS。專長：NestJS、React、Python、Claude API、ERP 整合。",
+    "15 年場域整合經驗，7,900+ commits，AI 應用實際落地：精誠資訊 AI 產線、都更審查 POC、Nuwa AI 家教 SaaS。專長：NestJS、React、Python、Claude API、ERP 整合。",
   keywords: [
     "方乃正",
     "Jeff Fang",

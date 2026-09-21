@@ -1,17 +1,17 @@
 export function JeffActivity() {
   const years = [
-    { year: "2011–13", commits: 5, label: "創業初期 · SpeakABC 口說英語 App", note: "牛奶創意成立" },
-    { year: "2014", commits: 8, label: "pibooth Raspberry Pi 相簿機", note: "硬體開發啟動" },
-    { year: "2015–17", commits: 12, label: "高朋卡 App 建置 · 台北市產發局補助通過", note: "政府認可" },
-    { year: "2018", commits: 10, label: "玉山證券 / E.SUN 金融整合", note: "金融科技" },
-    { year: "2019", commits: 18, label: "稻米 ERP 系統 12 大模組", note: "農業科技" },
-    { year: "2020", commits: 42, label: "LINE Bot × ERP × 後端", note: "多系統並行" },
-    { year: "2021", commits: 52, label: "Nuwa AI 家教 SaaS 啟動", note: "⚡ 首個 LLM 產品" },
-    { year: "2022", commits: 36, label: "平台規模化 · 多客戶並行", note: "" },
-    { year: "2023", commits: 100, label: "CmcDms 文件管理 3,655 commits", note: "高產出年" },
-    { year: "2024", commits: 78, label: "YAMAHA CRM · 高朋卡硬體 · 精誠 AI", note: "大廠客戶" },
-    { year: "2025", commits: 14, label: "新業務探索 · 新架構實驗", note: "" },
-    { year: "2026", commits: 68, label: "AI Coding 全面導入 · 10+ 新專案", note: "⚡ AI 加速", ai: true },
+    { year: "2011–13", commits: 4, label: "創業初期 · SpeakABC 口說英語 App", note: "牛奶創意成立" },
+    { year: "2014", commits: 5, label: "pibooth Raspberry Pi 相簿機", note: "硬體開發啟動" },
+    { year: "2015–17", commits: 7, label: "高朋卡 App 建置 · 台北市產發局補助通過", note: "政府認可" },
+    { year: "2018", commits: 6, label: "玉山證券 / E.SUN 金融整合", note: "金融科技" },
+    { year: "2019", commits: 8, label: "稻米 ERP 系統 12 大模組", note: "農業科技" },
+    { year: "2020", commits: 24, label: "LINE Bot × ERP × 後端 · 759 commits", note: "多系統並行" },
+    { year: "2021", commits: 25, label: "Nuwa AI 家教 SaaS 啟動 · 769 commits", note: "⚡ 首個 LLM 產品" },
+    { year: "2022", commits: 23, label: "平台規模化 · 多客戶並行 · 709 commits", note: "" },
+    { year: "2023", commits: 9, label: "石頭燒肉 · 稻米 ERP 迭代 · 274 commits", note: "" },
+    { year: "2024", commits: 69, label: "CmcDms 文件管理 · YAMAHA CRM · 2,148 commits", note: "大廠客戶" },
+    { year: "2025", commits: 5, label: "新業務探索 · 新架構實驗 · 161 commits", note: "" },
+    { year: "2026", commits: 100, label: "AI Coding 全面導入 · 59 個專案 · 3,103 commits", note: "⚡ AI 加速", ai: true },
   ]
 
   const maxCommits = Math.max(...years.map((y) => y.commits))
@@ -39,10 +39,11 @@ export function JeffActivity() {
               <span className="text-muted-foreground">2011 – 2026</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              本地 Git 統計：<strong className="text-foreground">9,200+ commits</strong>，
-              跨 <strong className="text-foreground">50+ repos</strong>，涵蓋 15 年開發歷程。
-              2026 年 AI Coding 工具全面導入後，
-              <strong className="text-foreground">同期產出的新專案數量是 2025 年的 5 倍以上</strong>。
+              本地 Git 統計：<strong className="text-foreground">7,900+ commits</strong>，
+              跨 <strong className="text-foreground">80+ repos</strong>，涵蓋 15 年開發歷程。
+              2026 年 AI Coding 工具全面導入後，單年產出
+              <strong className="text-foreground">3,100+ commits、橫跨 59 個專案</strong>，
+              <strong className="text-foreground">是 2025 年的 19 倍</strong>。
             </p>
           </div>
 
