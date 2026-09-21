@@ -34,6 +34,9 @@ export const organizationJsonLd = {
     postalCode: "100",
     addressCountry: "TW",
   },
+  hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    "台北市中正區忠孝西路一段45號9樓之5",
+  )}`,
   areaServed: {
     "@type": "Country",
     name: "TW",

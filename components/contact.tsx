@@ -7,6 +7,13 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
+import {
+  COMPANY_ADDRESS,
+  COMPANY_EMAIL,
+  COMPANY_PHONE_DISPLAY,
+  COMPANY_PHONE_HREF,
+  GOOGLE_MAPS_URL,
+} from "@/lib/company"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -56,20 +63,20 @@ export function Contact() {
     {
       icon: Mail,
       label: "電子郵件",
-      value: "jeff@milkidea.com",
-      href: "mailto:jeff@milkidea.com",
+      value: COMPANY_EMAIL,
+      href: `mailto:${COMPANY_EMAIL}`,
     },
     {
       icon: Phone,
       label: "聯絡電話",
-      value: "02-2371-1050",
-      href: "tel:+886223711050",
+      value: COMPANY_PHONE_DISPLAY,
+      href: COMPANY_PHONE_HREF,
     },
     {
       icon: MapPin,
       label: "公司地址",
-      value: "台北市中正區忠孝西路一段45號9樓之5",
-      href: "https://maps.google.com/?q=台北市中正區忠孝西路一段45號9樓之5",
+      value: COMPANY_ADDRESS,
+      href: GOOGLE_MAPS_URL,
       external: true,
     },
   ]

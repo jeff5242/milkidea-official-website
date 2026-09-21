@@ -1,5 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
+import { MapPin, Phone, Navigation } from "lucide-react"
+import {
+  COMPANY_ADDRESS,
+  COMPANY_PHONE_DISPLAY,
+  COMPANY_PHONE_HREF,
+  GOOGLE_MAPS_URL,
+  GOOGLE_MAPS_DIRECTIONS_URL,
+} from "@/lib/company"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -34,9 +42,38 @@ export function Footer() {
                 className="h-8 w-auto"
               />
             </Link>
-            <p className="text-muted-foreground leading-relaxed max-w-sm">
+            <p className="text-muted-foreground leading-relaxed max-w-sm mb-6">
               專注於行動應用與企業系統開發的數位解決方案公司，成立於 2011 年，深耕農業科技、交通導航、智慧製造及企業資訊系統。
             </p>
+
+            {/* 聯絡資訊 */}
+            <address className="not-italic space-y-3 text-sm">
+              <a
+                href={GOOGLE_MAPS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2.5 text-muted-foreground hover:text-foreground transition-colors group"
+              >
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span className="group-hover:underline underline-offset-4">{COMPANY_ADDRESS}</span>
+              </a>
+              <a
+                href={COMPANY_PHONE_HREF}
+                className="flex items-center gap-2.5 text-muted-foreground hover:text-foreground transition-colors group"
+              >
+                <Phone className="w-4 h-4 flex-shrink-0" />
+                <span className="group-hover:underline underline-offset-4">{COMPANY_PHONE_DISPLAY}</span>
+              </a>
+              <a
+                href={GOOGLE_MAPS_DIRECTIONS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-foreground font-medium hover:underline underline-offset-4"
+              >
+                <Navigation className="w-4 h-4" />
+                在 Google 地圖導航前往
+              </a>
+            </address>
           </div>
 
           {/* Services Links */}
