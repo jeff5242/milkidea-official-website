@@ -34,7 +34,8 @@ export function ProjectImage({ project }: { project: Project }) {
         <Image
           key={src}
           src={src}
-          alt={project.title}
+          alt={i === current ? project.title : ""}
+          aria-hidden={i !== current}
           width={400}
           height={300}
           className={cn(
