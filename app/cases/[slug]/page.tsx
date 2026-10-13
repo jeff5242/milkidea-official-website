@@ -136,6 +136,28 @@ export default async function CasePage({ params }: CasePageProps) {
             </div>
           </section>
 
+          {/* Links */}
+          {project.links && project.links.length > 0 && (
+            <section className="mb-12">
+              <h2 className="text-xl font-semibold text-foreground mb-4">相關連結</h2>
+              <ul className="space-y-2">
+                {project.links.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm text-accent hover:underline"
+                    >
+                      {link.label}
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {/* CTA */}
           <section className="p-8 bg-card border border-border rounded-2xl text-center">
             <h2 className="text-xl font-semibold text-foreground mb-2">有類似的專案需求？</h2>

@@ -51,9 +51,33 @@ export interface Project {
   image?: string
   /** 多張系統營運圖時每 3.5 秒自動切換 */
   images?: string[]
+  /** 案例頁「相關連結」：官方公告、公開文件下載等（只放公開可驗證的來源） */
+  links?: { label: string; href: string }[]
 }
 
 export const PROJECTS: Project[] = [
+  {
+    slug: "ifdcs-ai-predictive-maintenance",
+    title: "非侵入式工廠 AI 設備故障預知服務研發計畫（數位產業署補助核定）",
+    category: "ai",
+    industry: "製造科技",
+    year: "2026",
+    sortYear: 2026,
+    description:
+      "數位發展部數位產業署 DIGITAL⁺ 數位創新補助平台「115 年度 AI 創新服務研發補助計畫—AI 創新應用服務」核定計畫（核定日期 2026-10-12）。延續非侵入式工廠監控平台（IFDCS）的感測資料介接與 SCADA 儀表板經驗，研發以既有設備感測數據為基礎的 AI 故障預知服務，讓工廠不改機、不停線即可提前掌握設備異常。計畫執行中。",
+    tags: ["AI 故障預知", "工廠監控", "政府補助計畫"],
+    image: "/images/portfolio/ifdcs-dashboard.jpg",
+    links: [
+      {
+        label: "數位產業署 DIGITAL⁺ 官方公告",
+        href: "https://digiplus.adi.gov.tw/news_listinner.html?id=C67AAF88-EE0F-47C9-BDD9-FD93B39D6EE5",
+      },
+      {
+        label: "115 年度核定名單（PDF）",
+        href: "/docs/2026-adi-ai-innovation-subsidy-approved-list.pdf",
+      },
+    ],
+  },
   {
     slug: "y-connect-twn",
     title: "YAMAHA Y-Connect TWN 車聯網 APP",

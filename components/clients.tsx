@@ -19,6 +19,7 @@ const clients = [
 ]
 
 const trustBadges = [
+  { color: "bg-rose-500/80", label: "數位產業署 AI 創新服務研發補助核定（2026）" },
   { color: "bg-blue-500/80", label: "台北市產發局研發補助（2017）" },
   { color: "bg-emerald-500/80", label: "智慧農業機構能量登錄（2025）" },
   { color: "bg-purple-500/80", label: "雙鴻科技 策略股東" },

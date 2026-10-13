@@ -16,10 +16,13 @@ export function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-secondary px-4 py-2 rounded-full text-sm text-muted-foreground mb-8">
+          <a
+            href="/cases/ifdcs-ai-predictive-maintenance"
+            className="inline-flex items-center gap-2 bg-secondary px-4 py-2 rounded-full text-sm text-muted-foreground mb-8 hover:text-foreground transition-colors"
+          >
             <span className="w-2 h-2 bg-accent rounded-full" />
-            成立於 2011 年 · 超過 100+ 應用服務 · 15 萬+ 使用者
-          </div>
+            2026.10 數位產業署「AI 創新服務研發補助計畫」核定 · 成立於 2011 年
+          </a>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight tracking-tight text-balance mb-6">
