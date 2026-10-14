@@ -38,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    {
+      url: `${SITE_URL}/ai-training-slides.html`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.4,
+    },
     ...casePages,
   ]
 }
