@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { CountUp } from "@/components/count-up"
+import { HeroVideo } from "@/components/hero-video"
 
 const FOUNDED_YEAR = 2011
 
@@ -10,6 +11,8 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      {/* Background Video (淺色牛奶風循環影片；手機與減少動態偏好只顯示 poster) */}
+      <HeroVideo />
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
       
