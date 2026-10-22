@@ -1,3 +1,9 @@
+import path from "node:path"
+import { fileURLToPath } from "node:url"
+
+// 本機 ~/package-lock.json 會讓 Turbopack 誤判 workspace root，明確指定專案根目錄
+const PROJECT_ROOT = path.dirname(fileURLToPath(import.meta.url))
+
 /**
  * 安全標頭（2026-08 依精誠/8iSoft 供應商資安評級報告補齊）：
  * HSTS、CSP、X-Content-Type-Options、Referrer-Policy、X-Frame-Options、Permissions-Policy。
@@ -35,6 +41,9 @@ const nextConfig = {
     unoptimized: true,
   },
   poweredByHeader: false,
+  turbopack: {
+    root: PROJECT_ROOT,
+  },
   async headers() {
     return [
       {
